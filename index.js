@@ -39,8 +39,6 @@ async function run() {
     const blogsCollection = client.db("bloodBD").collection("blogs");
 
 
-
-    
     // JWT related api ---------------------------------------------------------
     app.post("/jwt", async (req, res) => {
       const user = req.body;
