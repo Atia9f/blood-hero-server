@@ -175,9 +175,7 @@ async function run() {
     app.get("/districts", async (req, res) => {
       res.send(districts);
     });
-
-
-    
+  
     
     app.get("/all-donation-request", async (req, res) => {
       const result = await donationRequestCollection.find().toArray();
